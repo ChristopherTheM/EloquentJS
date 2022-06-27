@@ -39,9 +39,9 @@ console.log("Solutions Central");
 // }
 
 //Solution for exercise 3.1 using arrow function notation
-let min = (x, y) => Math.min(x, y);
-console.log(min(0, 10));
-console.log(min(0, -10));
+// let min = (x, y) => Math.min(x, y);
+// console.log(min(0, 10));
+// console.log(min(0, -10));
 
 //Exercise 3.2 which fulfills the conditions without recursion
 // function isEven(number) {
@@ -53,31 +53,31 @@ console.log(min(0, -10));
 // }
 
 //3.2 with recursion and each case check
-function isEven(n) {
-  if (n == 0) return true;
-  else if (n == 1) return false;
-  else if (n < 0) return isEven(-n);
-  else return isEven(n - 2);
-}
+// function isEven(n) {
+//   if (n == 0) return true;
+//   else if (n == 1) return false;
+//   else if (n < 0) return isEven(-n);
+//   else return isEven(n - 2);
+// }
 
-console.log(isEven(50));
-console.log(isEven(75));
-console.log(isEven(-1));
+// console.log(isEven(50));
+// console.log(isEven(75));
+// console.log(isEven(-1));
 
-//Exercise 3.3
-function countBs(strings) {
-  return countChar(strings, "B");
-}
+// //Exercise 3.3
+// function countBs(strings) {
+//   return countChar(strings, "B");
+// }
 
-function countChar(strings, letter) {
-  let counter = 0;
-  for (let i = 0; i < strings.length; i++) {
-    if (strings[i] == letter) {
-      counter += 1;
-    }
-  }
-  return counter;
-}
+// function countChar(strings, letter) {
+//   let counter = 0;
+//   for (let i = 0; i < strings.length; i++) {
+//     if (strings[i] == letter) {
+//       counter += 1;
+//     }
+//   }
+//   return counter;
+// }
 
-console.log(countBs("BBC"));
-console.log(countChar("kakkerlak", "k"));
+// console.log(countBs("BBC"));
+// console.log(countChar("kakkerlak", "k"));
