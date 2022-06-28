@@ -81,3 +81,40 @@ console.log("Solutions Central");
 
 // console.log(countBs("BBC"));
 // console.log(countChar("kakkerlak", "k"));
+
+//Exercise 4.1
+
+function range(start, end, range = 1) {
+  let array = [];
+  let count = start;
+  for (let i = start; i <= end; i++) {
+    if (count <= end) {
+      array.push(count);
+      count = count + range;
+    }
+  }
+  return array;
+}
+
+//solution from book
+
+function range(start, end, step = start < end ? 1 : -1) {
+  let array = [];
+
+  if (step > 0) {
+    for (let i = start; i <= end; i += step) array.push(i);
+  } else {
+    for (let i = start; i >= end; i += step) array.push(i);
+  }
+  return array;
+}
+
+function sum(arrayValue) {
+  return arrayValue.reduce((a, b) => a + b, 0);
+}
+
+console.log(range(1, 10));
+console.log(sum(range(1, 10)));
+console.log(range(5, 2, -1));
+
+//Exercise 4.2
