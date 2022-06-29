@@ -119,11 +119,19 @@ console.log("Solutions Central");
 
 //Exercise 4.2
 function reverseArray(array) {
-  let newArray = [];
-  for (let i = 0; i < array.length; i++) {
-    let last = array.unshift();
-    newArray.push(last);
+  let output = [];
+  for (let i = 0; i <= array.length; i++) {
+    let item = array.pop();
+    output.push(item);
   }
-  return newArray;
+  return output;
 }
-console.log(reverseArray(["A", "B", "C"]));
+
+// function reverseArray(array) {
+//   let newArray = [];
+//   for (let i = array.length - 1; i >= 0; i--) {
+//     newArray.push(array[i]);
+//   }
+//   return newArray;
+// }
+console.log(reverseArray(["A", "B", "C", "D"]));
