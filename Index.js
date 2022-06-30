@@ -154,11 +154,53 @@ console.log("Solutions Central");
 // };
 
 function arrayToList(array) {
-  const list = Object.assign({}, array);
+  let list = null;
+  for (let i = array.length - 1; i >= 0; i--) {
+    list = { value: array[i], rest: list };
+  }
   return list;
 }
 
+function listToArray(list) {
+  let array = [];
+  for (let node = list; node; node = node.rest) {
+    array.push(node.value);
+  }
+  return array;
+}
+
+function prepend(element, list) {
+  let newList = Object.assign(element, list);
+  return newList;
+}
+
 console.log(arrayToList([10, 20, 30, 40]));
-// console.log(listToArray(arrayToList([10, 20, 30])));
-// console.log(prepend(10, prepend(20, null)));
+console.log(listToArray(arrayToList([10, 20, 30])));
+console.log(prepend(10, prepend(20, null)));
 // console.log(nth(arrayToList([10, 20, 30]), 1));
+
+let park = { name: "Biscayne", rating: 4.2 };
+// function ratingAsText(park) {
+//   console.log("This is a function delaration.");
+//   return park.rating > 4 ? "Excellent!" : "Good";
+// }
+
+const ratingAsText = () => console.log("This is a function delaration.");
+console.log(ratingAsText);
+
+const discountedPrice = (discount) => (price) => price * discount;
+
+const tenPercentDiscount = discountedPrice(0.9);
+//const finalPriceBed = tenPercentDiscount(200); // 90% of $200
+const finalPricePillow = tenPercentDiscount(52); // 90% of $52
+const finalPriceCurtain = tenPercentDiscount(32); // 90% of 32
+
+const twentyFivePercentDiscount = discountedPrice(0.75);
+const finalPriceBed = twentyFivePercentDiscount(200); // 75% of $200
+// const finalPricePillow = twentyFivePercentDiscount(52); // 75% of $52
+// const finalPriceCurtain = twentyFivePercentDiscount(32); // 75% of 32
+
+const discounts = (discount) => (price) => price * discount;
+const fiftyPercent = discounts(0.5);
+const finalPriceCar = fiftyPercent(31500);
+console.log(finalPriceCar);
