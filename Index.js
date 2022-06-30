@@ -1,11 +1,11 @@
 console.log("Solutions Central");
 
-//This is the solution to exercise 2.1
+// //Exercise 2.1
 // for (let result = "#"; result.length <= 7; result = result + "#") {
 //   console.log(result);
 // }
 
-//This is the solution to exercise 2.2
+// //Exercise 2.2
 // for (let number = 0; number <= 10; number++) {
 //   let result = "";
 //   if (number % 3 == 0) result += "fizz";
@@ -13,7 +13,7 @@ console.log("Solutions Central");
 //   console.log(result || number);
 // }
 
-//This is the solution for exercise 2.3
+// //Exercise 2.3
 // let size = 10;
 // let board = "";
 
@@ -29,7 +29,7 @@ console.log("Solutions Central");
 // }
 // console.log(board);
 
-//Solution for exercise 3.1
+// //Exercise 3.1
 // function min(x, y) {
 //   return Math.min(x, y);
 // }
@@ -38,12 +38,12 @@ console.log("Solutions Central");
 //   else return b;
 // }
 
-//Solution for exercise 3.1 using arrow function notation
+// //Solution for exercise 3.1 using arrow function notation
 // let min = (x, y) => Math.min(x, y);
 // console.log(min(0, 10));
 // console.log(min(0, -10));
 
-//Exercise 3.2 which fulfills the conditions without recursion
+// //Exercise 3.2 which fulfills the conditions without recursion
 // function isEven(number) {
 //   if (number % 2 == 0) {
 //     return true;
@@ -52,7 +52,7 @@ console.log("Solutions Central");
 //   }
 // }
 
-//3.2 with recursion and each case check
+// //Exercise 3.2 with recursion and each case check
 // function isEven(n) {
 //   if (n == 0) return true;
 //   else if (n == 1) return false;
@@ -82,7 +82,7 @@ console.log("Solutions Central");
 // console.log(countBs("BBC"));
 // console.log(countChar("kakkerlak", "k"));
 
-//Exercise 4.1
+// //Exercise 4.1
 
 // function range(start, end, range = 1) {
 //   let array = [];
@@ -117,16 +117,7 @@ console.log("Solutions Central");
 // console.log(sum(range(1, 10)));
 // console.log(range(5, 2, -1));
 
-//Exercise 4.2
-function reverseArray(array) {
-  let output = [];
-  for (let i = 0; i <= array.length; i++) {
-    let item = array.pop();
-    output.push(item);
-  }
-  return output;
-}
-
+// //Exercise 4.2
 // function reverseArray(array) {
 //   let newArray = [];
 //   for (let i = array.length - 1; i >= 0; i--) {
@@ -134,4 +125,40 @@ function reverseArray(array) {
 //   }
 //   return newArray;
 // }
-console.log(reverseArray(["A", "B", "C", "D"]));
+// console.log(reverseArray(["A", "B", "C", "D"]));
+
+// //Exercise 4.3
+// function reverseArrayInPlace(array) {
+//   for (let i = 0; i < Math.floor(array.length / 2); i++) {
+//     let old = array[i];
+//     array[i] = array[array.length - 1 - i];
+//     array[array.length - 1 - i] = old;
+//   }
+//   return array;
+// }
+
+// let arrayValue = [1, 2, 3, 4, 5];
+// reverseArrayInPlace(arrayValue);
+// console.log(arrayValue);
+
+//Exercise 4.4
+// let list = {
+//   value: 1,
+//   rest: {
+//     value: 2,
+//     rest: {
+//       value: 3,
+//       rest: null,
+//     },
+//   },
+// };
+
+function arrayToList(array) {
+  const list = Object.assign({}, array);
+  return list;
+}
+
+console.log(arrayToList([10, 20, 30, 40]));
+// console.log(listToArray(arrayToList([10, 20, 30])));
+// console.log(prepend(10, prepend(20, null)));
+// console.log(nth(arrayToList([10, 20, 30]), 1));
