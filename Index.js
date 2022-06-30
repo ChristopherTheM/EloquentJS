@@ -179,28 +179,34 @@ console.log(listToArray(arrayToList([10, 20, 30])));
 console.log(prepend(10, prepend(20, null)));
 // console.log(nth(arrayToList([10, 20, 30]), 1));
 
-let park = { name: "Biscayne", rating: 4.2 };
-// function ratingAsText(park) {
-//   console.log("This is a function delaration.");
-//   return park.rating > 4 ? "Excellent!" : "Good";
-// }
+let parks = [
+  { name: "Biscayne", rating: 4.2, driveable: true },
+  { name: "Grand Canyon", rating: 5, driveable: false },
+  { name: "Gateway Arch", rating: 4.5, driveable: true },
+  { name: "Indiana Dunes", rating: 4.1, driveable: true },
+  { name: "Yellowstone", rating: 4.9, driveable: false },
+  { name: "Glacier", rating: 3.3, driveable: true },
+  { name: "Rocky Mountain", rating: 4.2, driveable: true },
+  { name: "Olympic", rating: 3.1, driveable: false },
+  { name: "Bryce Canyon", rating: 4.3, driveable: true },
+  { name: "Arches", rating: 5, driveable: true },
+];
 
-const ratingAsText = () => console.log("This is a function delaration.");
-console.log(ratingAsText);
+function highestRated(parks) {
+  let topPark = null;
+  let bestParkRating = 0;
+  for (i = 0; i < parks.length; i++) {
+    if (parks[i].rating == 5 && parks[i].driveable == true) {
+      topPark = parks[i].name;
+      bestParkRating = parks[i].rating;
+      return `${topPark} is the greatest driveable national park, with a rating of ${bestParkRating} stars`;
+    }
+  }
+}
 
-const discountedPrice = (discount) => (price) => price * discount;
-
-const tenPercentDiscount = discountedPrice(0.9);
-//const finalPriceBed = tenPercentDiscount(200); // 90% of $200
-const finalPricePillow = tenPercentDiscount(52); // 90% of $52
-const finalPriceCurtain = tenPercentDiscount(32); // 90% of 32
-
-const twentyFivePercentDiscount = discountedPrice(0.75);
-const finalPriceBed = twentyFivePercentDiscount(200); // 75% of $200
-// const finalPricePillow = twentyFivePercentDiscount(52); // 75% of $52
-// const finalPriceCurtain = twentyFivePercentDiscount(32); // 75% of 32
-
-const discounts = (discount) => (price) => price * discount;
-const fiftyPercent = discounts(0.5);
-const finalPriceCar = fiftyPercent(31500);
-console.log(finalPriceCar);
+const sortedByRating = parks.sort(
+  (a, b) => parseFloat(a.rating) - parseFloat(b.rating)
+);
+console.log(sortedByRating);
+console.log(highestRated(parks));
+console.log(parks);
