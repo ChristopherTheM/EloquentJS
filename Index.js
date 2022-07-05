@@ -153,60 +153,67 @@ console.log("Solutions Central");
 //   },
 // };
 
-function arrayToList(array) {
-  let list = null;
-  for (let i = array.length - 1; i >= 0; i--) {
-    list = { value: array[i], rest: list };
-  }
-  return list;
+// function arrayToList(array) {
+//   let list = null;
+//   for (let i = array.length - 1; i >= 0; i--) {
+//     list = { value: array[i], rest: list };
+//   }
+//   return list;
+// }
+
+// function listToArray(list) {
+//   let array = [];
+//   for (let node = list; node; node = node.rest) {
+//     array.push(node.value);
+//   }
+//   return array;
+// }
+
+// function prepend(element, list) {
+//   let newList = Object.assign(element, list);
+//   return newList;
+// }
+
+// console.log(arrayToList([10, 20, 30, 40]));
+// console.log(listToArray(arrayToList([10, 20, 30])));
+// console.log(prepend(10, prepend(20, null)));
+// // console.log(nth(arrayToList([10, 20, 30]), 1));
+
+// let parks = [
+//   { name: "Biscayne", rating: 4.2, driveable: true },
+//   { name: "Grand Canyon", rating: 5, driveable: false },
+//   { name: "Gateway Arch", rating: 4.5, driveable: true },
+//   { name: "Indiana Dunes", rating: 4.1, driveable: true },
+//   { name: "Yellowstone", rating: 4.9, driveable: false },
+//   { name: "Glacier", rating: 3.3, driveable: true },
+//   { name: "Rocky Mountain", rating: 4.2, driveable: true },
+//   { name: "Olympic", rating: 3.1, driveable: false },
+//   { name: "Bryce Canyon", rating: 4.3, driveable: true },
+//   { name: "Arches", rating: 5, driveable: true },
+// ];
+
+// function highestRated(parks) {
+//   let topPark = null;
+//   let bestParkRating = 0;
+//   for (i = 0; i < parks.length; i++) {
+//     if (parks[i].rating == 5 && parks[i].driveable == true) {
+//       topPark = parks[i].name;
+//       bestParkRating = parks[i].rating;
+//       return `${topPark} is the greatest driveable national park, with a rating of ${bestParkRating} stars`;
+//     }
+//   }
+// }
+
+// const sortedByRating = parks.sort(
+//   (a, b) => parseFloat(a.rating) - parseFloat(b.rating)
+// );
+// console.log(sortedByRating);
+// console.log(highestRated(parks));
+// console.log(parks);
+
+//Odin project work
+function odinProject() {
+  return console.log("This is the Odin Project");
 }
 
-function listToArray(list) {
-  let array = [];
-  for (let node = list; node; node = node.rest) {
-    array.push(node.value);
-  }
-  return array;
-}
-
-function prepend(element, list) {
-  let newList = Object.assign(element, list);
-  return newList;
-}
-
-console.log(arrayToList([10, 20, 30, 40]));
-console.log(listToArray(arrayToList([10, 20, 30])));
-console.log(prepend(10, prepend(20, null)));
-// console.log(nth(arrayToList([10, 20, 30]), 1));
-
-let parks = [
-  { name: "Biscayne", rating: 4.2, driveable: true },
-  { name: "Grand Canyon", rating: 5, driveable: false },
-  { name: "Gateway Arch", rating: 4.5, driveable: true },
-  { name: "Indiana Dunes", rating: 4.1, driveable: true },
-  { name: "Yellowstone", rating: 4.9, driveable: false },
-  { name: "Glacier", rating: 3.3, driveable: true },
-  { name: "Rocky Mountain", rating: 4.2, driveable: true },
-  { name: "Olympic", rating: 3.1, driveable: false },
-  { name: "Bryce Canyon", rating: 4.3, driveable: true },
-  { name: "Arches", rating: 5, driveable: true },
-];
-
-function highestRated(parks) {
-  let topPark = null;
-  let bestParkRating = 0;
-  for (i = 0; i < parks.length; i++) {
-    if (parks[i].rating == 5 && parks[i].driveable == true) {
-      topPark = parks[i].name;
-      bestParkRating = parks[i].rating;
-      return `${topPark} is the greatest driveable national park, with a rating of ${bestParkRating} stars`;
-    }
-  }
-}
-
-const sortedByRating = parks.sort(
-  (a, b) => parseFloat(a.rating) - parseFloat(b.rating)
-);
-console.log(sortedByRating);
-console.log(highestRated(parks));
-console.log(parks);
+odinProject();
