@@ -217,3 +217,10 @@ function odinProject() {
 }
 
 odinProject();
+//This is new Odin Project Info
+function addOne(number) {
+  let numberPlusOne = number + 1;
+  return console.log(numberPlusOne);
+}
+
+addOne(15);
