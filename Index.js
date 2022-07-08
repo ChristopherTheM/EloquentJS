@@ -249,3 +249,15 @@ function driveableParks(parks) {
   return parks.filter((park) => park.driveable == true);
 }
 console.log(driveableParks(parks));
+
+function listOfParkNames(parks) {
+  return parks.map((park) => park.name);
+}
+console.log(listOfParkNames(parks));
+
+function listOfNamesWithRating(parks) {
+  return parks.map(
+    (park) => `${park.name} National Park has a rating of ${park.rating}.`
+  );
+}
+console.log(listOfNamesWithRating(parks));
