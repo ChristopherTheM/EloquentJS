@@ -244,3 +244,8 @@ function findParkNamed(parks, name) {
 }
 // let findParkNamed = parks.find((park) => park.name === "Arches");
 console.log(findParkNamed(parks, "Rancid"));
+
+function driveableParks(parks) {
+  return parks.filter((park) => park.driveable == true);
+}
+console.log(driveableParks(parks));
