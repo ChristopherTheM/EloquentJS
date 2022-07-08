@@ -189,6 +189,13 @@ let parks = [
   { name: "Rocky Mountain", rating: 4.2, driveable: true },
   { name: "Olympic", rating: 3.1, driveable: false },
   { name: "Bryce Canyon", rating: 4.3, driveable: true },
+  { name: "Hollows Eve", rating: 2.9, driveable: false },
+  { name: "Spire Rock", rating: 3.2, driveable: true },
+  { name: "Big Bend", rating: 5, driveable: true },
+  { name: "Culver City", rating: 3.9, driveable: false },
+  { name: "Umbrella Corp", rating: 3.8, driveable: false },
+  { name: "Rancid", rating: 4.3, driveable: true },
+  { name: "Bad Religion", rating: 4.5, driveable: true },
   { name: "Arches", rating: 5, driveable: true },
 ];
 
@@ -231,3 +238,9 @@ function getDriveableParks(parks) {
 
 let highestRatedParks = parks.filter((park) => park.rating >= 4.8);
 console.log(highestRatedParks);
+
+function findParkNamed(parks, name) {
+  return parks.find((park) => park.name === name);
+}
+// let findParkNamed = parks.find((park) => park.name === "Arches");
+console.log(findParkNamed(parks, "Rancid"));
