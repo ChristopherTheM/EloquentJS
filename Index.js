@@ -199,26 +199,6 @@ let parks = [
   { name: "Arches", rating: 5, driveable: true },
 ];
 
-// function highestRated(parks) {
-//   let topPark = null;
-//   let bestParkRating = 0;
-//   for (i = 0; i < parks.length; i++) {
-//     if (parks[i].rating == 5 && parks[i].driveable == true) {
-//       topPark = parks[i].name;
-//       bestParkRating = parks[i].rating;
-//       return `${topPark} is the greatest driveable national park, with a rating of ${bestParkRating} stars`;
-//     }
-//   }
-// }
-
-// const sortedByRating = parks.sort(
-//   (a, b) => parseFloat(a.rating) - parseFloat(b.rating)
-// );
-// console.log(sortedByRating);
-// console.log(highestRated(parks));
-// console.log(parks);
-
-//Odin project work
 function odinProject() {
   return console.log("This is the Odin Project");
 }
@@ -255,9 +235,14 @@ function listOfParkNames(parks) {
 }
 console.log(listOfParkNames(parks));
 
-function listOfNamesWithRating(parks) {
-  return parks.map(
-    (park) => `${park.name} National Park has a rating of ${park.rating}.`
-  );
-}
-console.log(listOfNamesWithRating(parks));
+// function listOfNamesWithRating(parks) {
+//   return parks.map(
+//     (park) => `${park.name} National Park has a rating of ${park.rating}.`
+//   );
+// }
+// console.log(listOfNamesWithRating(parks));
+
+// Object.keys(parks).filter((name) => {
+//   const rating = parks[name];
+//   return rating >= 4.5;
+// });
