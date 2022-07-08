@@ -179,18 +179,18 @@ console.log("Solutions Central");
 // console.log(prepend(10, prepend(20, null)));
 // // console.log(nth(arrayToList([10, 20, 30]), 1));
 
-// let parks = [
-//   { name: "Biscayne", rating: 4.2, driveable: true },
-//   { name: "Grand Canyon", rating: 5, driveable: false },
-//   { name: "Gateway Arch", rating: 4.5, driveable: true },
-//   { name: "Indiana Dunes", rating: 4.1, driveable: true },
-//   { name: "Yellowstone", rating: 4.9, driveable: false },
-//   { name: "Glacier", rating: 3.3, driveable: true },
-//   { name: "Rocky Mountain", rating: 4.2, driveable: true },
-//   { name: "Olympic", rating: 3.1, driveable: false },
-//   { name: "Bryce Canyon", rating: 4.3, driveable: true },
-//   { name: "Arches", rating: 5, driveable: true },
-// ];
+let parks = [
+  { name: "Biscayne", rating: 4.2, driveable: true },
+  { name: "Grand Canyon", rating: 5, driveable: false },
+  { name: "Gateway Arch", rating: 4.5, driveable: true },
+  { name: "Indiana Dunes", rating: 4.1, driveable: true },
+  { name: "Yellowstone", rating: 4.9, driveable: false },
+  { name: "Glacier", rating: 3.3, driveable: true },
+  { name: "Rocky Mountain", rating: 4.2, driveable: true },
+  { name: "Olympic", rating: 3.1, driveable: false },
+  { name: "Bryce Canyon", rating: 4.3, driveable: true },
+  { name: "Arches", rating: 5, driveable: true },
+];
 
 // function highestRated(parks) {
 //   let topPark = null;
@@ -224,3 +224,10 @@ function addOne(number) {
 }
 
 addOne(15);
+
+function getDriveableParks(parks) {
+  parks.forEach();
+}
+
+let highestRatedParks = parks.filter((park) => park.rating >= 4.8);
+console.log(highestRatedParks);
