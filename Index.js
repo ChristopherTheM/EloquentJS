@@ -253,3 +253,9 @@ function ratingBestToWorst(parks) {
 }
 
 //sort by alphabet
+function alphabatizeMeCapn(parks) {
+  parks.sort((parkA, parkB) => (parkA.name > parkB.name ? 1 : -1));
+  console.log(parks);
+}
+
+alphabatizeMeCapn(parks);
