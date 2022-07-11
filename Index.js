@@ -199,6 +199,10 @@ let parks = [
   { name: "Arches", rating: 5, driveable: true },
 ];
 
+let numbers = [4, 6, 12, 14, 64, 33, 23, 67, 183, 45, 3, 64];
+
+console.log(numbers.sort((a, b) => a - b));
+
 // function odinProject() {
 //   return console.log("This is the Odin Project");
 // }
@@ -254,8 +258,19 @@ function ratingBestToWorst(parks) {
 
 //sort by alphabet
 function alphabatizeMeCapn(parks) {
-  parks.sort((parkA, parkB) => (parkA.name > parkB.name ? 1 : -1));
+  parks.sort((parkA, parkB) =>
+    parkA.name.toLowerCase() > parkB.name.toLowerCase() ? 1 : -1
+  );
   console.log(parks);
 }
 
 alphabatizeMeCapn(parks);
+console.log(parks[0].name);
+console.log(parks[1].name);
+console.log(parks[2].name);
+console.log(parks[3].name);
+console.log(parks[4].name);
+console.log(parks[5].name);
+console.log(parks[6].name);
+console.log(parks[7].name);
+console.log(parks[8].name);
