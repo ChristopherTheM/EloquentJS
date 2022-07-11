@@ -251,12 +251,12 @@ console.log(numbers.sort((a, b) => a - b));
 //   return rating >= 4.5;
 // });
 
-//sort by rating
-function ratingBestToWorst(parks) {
-  parks.sort((parkA, parkB) => (parkA.rating > parkB.rating ? 1 : -1));
-}
+// //sort by rating
+// function ratingBestToWorst(parks) {
+//   parks.sort((parkA, parkB) => (parkA.rating > parkB.rating ? 1 : -1));
+// }
 
-//sort by alphabet
+// //sort by alphabet
 function alphabatizeMeCapn(parks) {
   parks.sort((parkA, parkB) =>
     parkA.name.toLowerCase() > parkB.name.toLowerCase() ? 1 : -1
@@ -265,12 +265,18 @@ function alphabatizeMeCapn(parks) {
 }
 
 alphabatizeMeCapn(parks);
-console.log(parks[0].name);
-console.log(parks[1].name);
-console.log(parks[2].name);
-console.log(parks[3].name);
-console.log(parks[4].name);
-console.log(parks[5].name);
-console.log(parks[6].name);
-console.log(parks[7].name);
-console.log(parks[8].name);
+// console.log(parks[0].name);
+// console.log(parks[1].name);
+// console.log(parks[2].name);
+// console.log(parks[3].name);
+// console.log(parks[4].name);
+// console.log(parks[5].name);
+// console.log(parks[6].name);
+// console.log(parks[7].name);
+// console.log(parks[8].name);
+
+const parkReduceObject = parks.reduce((result, park) => {
+  result[park.name] = park.rating;
+  return result;
+}, {});
+console.log(parkReduceObject);
