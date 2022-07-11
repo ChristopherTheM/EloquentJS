@@ -199,41 +199,41 @@ let parks = [
   { name: "Arches", rating: 5, driveable: true },
 ];
 
-function odinProject() {
-  return console.log("This is the Odin Project");
-}
+// function odinProject() {
+//   return console.log("This is the Odin Project");
+// }
 
-odinProject();
-//This is new Odin Project Info
-function addOne(number) {
-  let numberPlusOne = number + 1;
-  return console.log(numberPlusOne);
-}
+// odinProject();
+// //This is new Odin Project Info
+// function addOne(number) {
+//   let numberPlusOne = number + 1;
+//   return console.log(numberPlusOne);
+// }
 
-addOne(15);
+// addOne(15);
 
-function getDriveableParks(parks) {
-  parks.forEach();
-}
+// function getDriveableParks(parks) {
+//   parks.forEach();
+// }
 
-let highestRatedParks = parks.filter((park) => park.rating >= 4.8);
-console.log(highestRatedParks);
+// let highestRatedParks = parks.filter((park) => park.rating >= 4.8);
+// console.log(highestRatedParks);
 
-function findParkNamed(parks, name) {
-  return parks.find((park) => park.name === name);
-}
-// let findParkNamed = parks.find((park) => park.name === "Arches");
-console.log(findParkNamed(parks, "Rancid"));
+// function findParkNamed(parks, name) {
+//   return parks.find((park) => park.name === name);
+// }
+// // let findParkNamed = parks.find((park) => park.name === "Arches");
+// console.log(findParkNamed(parks, "Rancid"));
 
-function driveableParks(parks) {
-  return parks.filter((park) => park.driveable == true);
-}
-console.log(driveableParks(parks));
+// function driveableParks(parks) {
+//   return parks.filter((park) => park.driveable == true);
+// }
+// console.log(driveableParks(parks));
 
-function listOfParkNames(parks) {
-  return parks.map((park) => park.name);
-}
-console.log(listOfParkNames(parks));
+// function listOfParkNames(parks) {
+//   return parks.map((park) => park.name);
+// }
+// console.log(listOfParkNames(parks));
 
 // function listOfNamesWithRating(parks) {
 //   return parks.map(
@@ -246,3 +246,10 @@ console.log(listOfParkNames(parks));
 //   const rating = parks[name];
 //   return rating >= 4.5;
 // });
+
+//sort by rating
+function ratingBestToWorst(parks) {
+  parks.sort((parkA, parkB) => (parkA.rating > parkB.rating ? 1 : -1));
+}
+
+//sort by alphabet
