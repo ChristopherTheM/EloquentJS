@@ -284,4 +284,9 @@ const parkReduceObject = parks.reduce((result, park) => {
   result[park.name] = park.rating;
   return result;
 }, {});
+console.log(
+  "This is logging the parks.reduce after it has been sorted by rating."
+);
 console.log(parkReduceObject);
+
+//The cake is a lie
