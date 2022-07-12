@@ -264,7 +264,12 @@ function alphabatizeMeCapn(parks) {
   console.log(parks);
 }
 
-alphabatizeMeCapn(parks);
+function rateMeCapn(parks) {
+  parks.sort((parkA, parkB) => (parkA.rating < parkB.rating ? 1 : -1));
+  console.log(parks);
+}
+rateMeCapn(parks);
+//alphabatizeMeCapn(parks);
 // console.log(parks[0].name);
 // console.log(parks[1].name);
 // console.log(parks[2].name);
