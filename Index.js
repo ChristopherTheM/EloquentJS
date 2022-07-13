@@ -269,7 +269,7 @@ function rateMeCapn(parks) {
   console.log(parks);
 }
 rateMeCapn(parks);
-//alphabatizeMeCapn(parks);
+alphabatizeMeCapn(parks);
 // console.log(parks[0].name);
 // console.log(parks[1].name);
 // console.log(parks[2].name);

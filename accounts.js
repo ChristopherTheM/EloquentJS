@@ -911,4 +911,21 @@ const accounts = [
   },
 ];
 
+// function findAccountById(accounts, id) {
+//   return accounts.find((account) => account.id === id);
+// }
+
+// console.log(findAccountById(accounts, "5f446f2eae901a82e0259947"));
+
+// function sortAccountsByLastName(accounts) {
+//   return accounts.sort((accountA, accountB) => {
+//     let lastNameA = accountA.name.last.toLowerCase();
+//     let lastNameB = accountB.name.last.toLowerCase();
+//     return lastNameA > lastNameB ? 1 : -1;
+//   });
+//   return [];
+// }
+
+// console.log(sortAccountsByLastName(accounts));
+
 module.exports = accounts;
