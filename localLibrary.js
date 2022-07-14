@@ -1,7 +1,7 @@
 //This is the local library project from Thinkful.
-//import books from books;
-//import authors from authors;
-import "./accounts";
+import books from "./books";
+import authors from "./authors";
+import accounts from "./accounts";
 //Find Account by ID
 function findAccountById(accounts, id) {
   return accounts.find((account) => account.id === id);
