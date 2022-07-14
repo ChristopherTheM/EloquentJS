@@ -5,14 +5,25 @@ console.log("Solutions Central");
 //   console.log(result);
 // }
 
-// //Exercise 2.2
-// for (let number = 0; number <= 10; number++) {
-//   let result = "";
-//   if (number % 3 == 0) result += "fizz";
-//   if (number % 5 == 0) result += "buzz";
-//   console.log(result || number);
-// }
+//Exercise 2.2
+for (let number = 0; number <= 20; number++) {
+  let result = "";
+  if (number % 3 == 0) result += "fizz";
+  if (number % 5 == 0) result += "buzz";
+  console.log(result || number);
+}
 
+//This iteration of fizzbuzz allows for the words to be changed to anything the user might want.
+function fizzBuzz(fizz, buzz) {
+  for (let number = 0; number <= 20; number++) {
+    let result = "";
+    if (number % 3 == 0) result += `${fizz}`;
+    if (number % 5 == 0) result += `${buzz}`;
+    console.log(result || number);
+  }
+}
+
+fizzBuzz("mango", "hardy");
 // //Exercise 2.3
 // let size = 10;
 // let board = "";
