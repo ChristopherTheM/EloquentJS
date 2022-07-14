@@ -23,7 +23,11 @@ function sortAccountsByLastName(accounts) {
 console.log(sortAccountsByLastName(accounts));
 
 //Get total number of borrows of a book
-
+function getTotalNumberOfBorrows(account, books) {
+  return books.reduce((acc, book) => {
+    const totalBorrows = book.borrowed.reduce((borrowAcc, borrow) => {});
+  });
+}
 //Get books possessed by account
 
 module.exports = { findAccountById, sortAccountsByLastName };
