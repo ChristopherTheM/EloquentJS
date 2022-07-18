@@ -215,6 +215,11 @@ let numbers = [4, 6, 12, 14, 64, 33, 23, 67, 183, 45, 3, 64];
 
 console.log(numbers.sort((a, b) => a - b));
 
+function thisIsForFun() {
+  return console.log("Coding is fun if you try it!");
+}
+thisIsForFun();
+
 // function odinProject() {
 //   return console.log("This is the Odin Project");
 // }
