@@ -215,10 +215,16 @@ let numbers = [4, 6, 12, 14, 64, 33, 23, 67, 183, 45, 3, 64];
 
 console.log(numbers.sort((a, b) => a - b));
 
-function thisIsForFun() {
-  return console.log("Coding is fun if you try it!");
+function thisIsForFun(text) {
+  if (text === "Hello there!") {
+    return console.log(
+      "Obi-wan Kenobi: 'Hello there!'\nGrevious: 'General Kenobi, at last'"
+    );
+  } else {
+    return console.log(`${text}`);
+  }
 }
-thisIsForFun();
+thisIsForFun("Hello there!");
 
 // function odinProject() {
 //   return console.log("This is the Odin Project");
