@@ -226,6 +226,56 @@ function thisIsForFun(text) {
 }
 thisIsForFun("Hello there!");
 
+const quotes = [
+  {
+    character: { first: "Anakin", last: "Skywalker" },
+    jedi: true,
+    quote: {
+      classic: "My powers have doubled since the last time we met.",
+      famous:
+        "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
+      obscure: "Here's where the fun begins!",
+    },
+    lightsaber: true,
+    color: blue,
+  },
+  {
+    character: { first: "Luke", last: "Skywalker" },
+    jedi: true,
+    quote: {
+      classic: "I'm Luke Skywalker, I'm here to rescue you.",
+      famous:
+        "Never. I'll never turn to the dark side. You've failed, your Highness. I am a jedi like my father before me.",
+      obscure:
+        "I was going to go into Toshi Station to pick up some power converters.",
+    },
+    lightsaber: true,
+    color: green,
+  },
+  {
+    character: { first: "Ahsoka", last: "Tano" },
+    jedi: false,
+    quote: {
+      classic: "Sometimes the student guides the master.",
+      famous: "Whatever you say, Skyguy.",
+      obscure: "To defeat your enemy, you have to understand them.",
+    },
+    lightsaber: true,
+    color: silver,
+  },
+  {
+    character: { first: "Obi-wan", last: "Kenobi" },
+    jedi: true,
+    quote: {
+      classic: "Master, destroyers!",
+      famous: "Hello there!",
+      obscure: "I've got a bad feeling about this.",
+    },
+    lightsaber: true,
+    color: blue,
+  },
+];
+
 // function odinProject() {
 //   return console.log("This is the Odin Project");
 // }
