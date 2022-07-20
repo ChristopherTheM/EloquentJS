@@ -274,6 +274,28 @@ const quotes = [
     lightsaber: true,
     color: blue,
   },
+  {
+    character: { first: "Han", last: "Solo" },
+    jedi: false,
+    quote: {
+      classic: "Get to the Falcon!",
+      famous: "Boring conversation anyway.",
+      obscure: "Never tell me the odds.",
+    },
+    lightsaber: false,
+    color: false,
+  },
+  {
+    character: { first: "Princess Leia", last: "Organa" },
+    jedi: false,
+    quote: {
+      classic: "Somebody get this walking carpet out of my way!",
+      famous: "Help me Obi-wan Kenobi, you're my only hope.",
+      obscure: "In that thing? You're braver than I thought.",
+    },
+    lightsaber: false,
+    color: false,
+  },
 ];
 
 // function odinProject() {
