@@ -278,7 +278,8 @@ const quotes = [
     character: { first: "Han", last: "Solo" },
     jedi: false,
     quote: {
-      classic: "Get to the Falcon!",
+      classic:
+        "Yeee-Whoooo, you're all clear kid, now let's blow this thing and go home!",
       famous: "Boring conversation anyway.",
       obscure: "Never tell me the odds.",
     },
@@ -295,6 +296,39 @@ const quotes = [
     },
     lightsaber: false,
     color: false,
+  },
+  {
+    character: { first: "R2-D2", last: "Utility Droid" },
+    jedi: false,
+    quote: {
+      classic: "Dwoooo",
+      famous: "pbbt bweep woo",
+      obscure: "whooooooaaaaa",
+    },
+    lightsaber: false,
+    color: false,
+  },
+  {
+    character: { first: "Master", last: "Yoda" },
+    jedi: true,
+    quote: {
+      classic: "Too old, yes, too old to begin the training.",
+      famous: "Try not! Do, or do not, there is no try.",
+      obscure: "Judge me by my size, hmm?",
+    },
+    lightsaber: true,
+    color: green,
+  },
+  {
+    character: { first: "Darth", last: "Vader" },
+    jedi: false,
+    quote: {
+      classic: "Join me, and together we can rule the galaxy.",
+      famous: "No. I am your father!",
+      obscure: "I want them alive, no disintegrations!",
+    },
+    lightsaber: true,
+    color: red,
   },
 ];
 
@@ -385,3 +419,4 @@ console.log(
 console.log(parkReduceObject);
 
 //The cake is a lie
+//This is the song that never ends...
