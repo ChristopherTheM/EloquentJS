@@ -418,5 +418,12 @@ console.log(
 );
 console.log(parkReduceObject);
 
+const quoteReduce = quotes.reduce((result, quote) => {
+  result[quote.character.first] = quote.quote.famous;
+  return result;
+}, {});
+
+console.log(quoteReduce);
+
 //The cake is a lie
 //This is the song that never ends...
