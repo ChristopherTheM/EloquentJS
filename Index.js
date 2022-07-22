@@ -237,7 +237,7 @@ const quotes = [
       obscure: "Here's where the fun begins!",
     },
     lightsaber: true,
-    color: blue,
+    color: "blue",
   },
   {
     character: { first: "Luke", last: "Skywalker" },
@@ -250,7 +250,7 @@ const quotes = [
         "I was going to go into Toshi Station to pick up some power converters.",
     },
     lightsaber: true,
-    color: green,
+    color: "green",
   },
   {
     character: { first: "Ahsoka", last: "Tano" },
@@ -261,7 +261,7 @@ const quotes = [
       obscure: "To defeat your enemy, you have to understand them.",
     },
     lightsaber: true,
-    color: silver,
+    color: "silver",
   },
   {
     character: { first: "Obi-wan", last: "Kenobi" },
@@ -272,7 +272,7 @@ const quotes = [
       obscure: "I've got a bad feeling about this.",
     },
     lightsaber: true,
-    color: blue,
+    color: "blue",
   },
   {
     character: { first: "Han", last: "Solo" },
@@ -317,7 +317,7 @@ const quotes = [
       obscure: "Judge me by my size, hmm?",
     },
     lightsaber: true,
-    color: green,
+    color: "green",
   },
   {
     character: { first: "Darth", last: "Vader" },
@@ -328,7 +328,7 @@ const quotes = [
       obscure: "I want them alive, no disintegrations!",
     },
     lightsaber: true,
-    color: red,
+    color: "red",
   },
 ];
 
