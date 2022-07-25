@@ -423,7 +423,10 @@ const quoteReduce = quotes.reduce((result, quote) => {
   return result;
 }, {});
 
-console.log(quoteReduce);
+//console.log(quoteReduce);
+
+const quoteFilter = quotes.filter((quote) => quote.jedi);
+console.log(quoteFilter);
 
 //The cake is a lie
 //This is the song that never ends...
