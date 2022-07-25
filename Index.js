@@ -428,5 +428,5 @@ const quoteReduce = quotes.reduce((result, quote) => {
 const quoteFilter = quotes.filter((quote) => quote.jedi);
 console.log(quoteFilter);
 
-//The cake is a lie
+console.log("The cake is a lie");
 //This is the song that never ends...
