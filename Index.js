@@ -211,20 +211,20 @@ let parks = [
   { name: "Arches", rating: 5, driveable: true },
 ];
 
-let numbers = [4, 6, 12, 14, 64, 33, 23, 67, 183, 45, 3, 64];
+// let numbers = [4, 6, 12, 14, 64, 33, 23, 67, 183, 45, 3, 64];
 
-console.log(numbers.sort((a, b) => a - b));
+// console.log(numbers.sort((a, b) => a - b));
 
-function thisIsForFun(text) {
-  if (text === "Hello there!") {
-    return console.log(
-      "Obi-wan Kenobi: 'Hello there!'\nGrevious: 'General Kenobi, at last'"
-    );
-  } else {
-    return console.log(`${text}`);
-  }
-}
-thisIsForFun("Hello there!");
+// function thisIsForFun(text) {
+//   if (text === "Hello there!") {
+//     return console.log(
+//       "Obi-wan Kenobi: 'Hello there!'\nGrevious: 'General Kenobi, at last'"
+//     );
+//   } else {
+//     return console.log(`${text}`);
+//   }
+// }
+// thisIsForFun("Hello there!");
 
 const quotes = [
   {
@@ -332,6 +332,11 @@ const quotes = [
   },
 ];
 
+const quoteNames = quotes.map((quote) => {
+  quote.character.first, quote.character.last;
+});
+
+console.log(quoteNames);
 // function odinProject() {
 //   return console.log("This is the Odin Project");
 // }
@@ -397,8 +402,8 @@ function rateMeCapn(parks) {
   parks.sort((parkA, parkB) => (parkA.rating < parkB.rating ? 1 : -1));
   console.log(parks);
 }
-rateMeCapn(parks);
-alphabatizeMeCapn(parks);
+// rateMeCapn(parks);
+// alphabatizeMeCapn(parks);
 // console.log(parks[0].name);
 // console.log(parks[1].name);
 // console.log(parks[2].name);
