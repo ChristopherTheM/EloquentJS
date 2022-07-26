@@ -332,9 +332,9 @@ const quotes = [
   },
 ];
 
-const quoteNames = quotes.map((quote) => {
-  quote.character.first, quote.character.last;
-});
+const quoteNames = quotes.map(
+  (quote) => quote.character.first + " " + quote.character.last
+);
 
 console.log(quoteNames);
 // function odinProject() {
