@@ -336,6 +336,8 @@ const quoteNames = quotes.map(
   (quote) => quote.character.first + " " + quote.character.last
 );
 
+console.log("Here we go again.");
+
 console.log(quoteNames);
 // function odinProject() {
 //   return console.log("This is the Odin Project");
