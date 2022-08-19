@@ -337,6 +337,7 @@ const quoteNames = quotes.map(
 );
 
 console.log("Here we go again.");
+console.log("This is where the fun begins.");
 
 console.log(quoteNames);
 // function odinProject() {
